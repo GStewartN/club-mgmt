@@ -1,7 +1,11 @@
 <div>
   <h2>{{(memberToDisplay | async).name}}</h2>
+  <h4>Age:</h4>
   <p>{{(memberToDisplay | async).age}}</p>
+  <h4>Cycling Preference:</h4>
   <p>{{(memberToDisplay | async).type}}</p>
+  <h4>About This Cyclist:</h4>
   <p>{{(memberToDisplay | async).aboutMe}}</p>
-  <p>{{(memberToDisplay | async).memberFor}}</p>
+  <h4>Member for:</h4>
+  <p>{{(memberToDisplay | async).memberFor}} years</p>
 </div>

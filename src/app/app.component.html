@@ -1,5 +1,22 @@
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand text-muted" routerLink="">Cycling Club</a>
+    </div>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a class="text-muted" routerLink="members">Members</a></li>
+    </ul>
+  </div>
+</nav>
 
-  <h1>
-    Welcome to {{title}}!
-  </h1>
-  
+<div class="container wrapper">
+  <h1>{{title}}</h1>
+  <router-outlet></router-outlet>
+  <div class="push"></div>
+</div>
+
+<footer class="footer">
+  <div class="container">
+    <a class="text-muted" routerLink="admin">Admin</a>
+  </div>
+</footer>

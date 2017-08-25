@@ -20,4 +20,7 @@ export class EditMemberComponent implements OnInit {
     this.memberService.updateMember(memberToUpdate);
   }
 
-}
+  beginDeletingMember(memberToDelete){
+      this.memberService.deleteMember(memberToDelete);
+    }
+  }

@@ -3,6 +3,7 @@ import { Member } from '../member.model';
 import { ActivatedRoute, Params } from '@angular/router';
 import { Location } from '@angular/common';
 import { MemberService } from '../member.service';
+import { FirebaseObjectObservable } from 'angularfire2/database';
 
 @Component({
   selector: 'app-member-profile',

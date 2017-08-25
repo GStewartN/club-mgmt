@@ -12,6 +12,7 @@ import { AdminComponent } from './admin/admin.component';
 import { MemberProfileComponent } from './member-profile/member-profile.component';
 import { AboutComponent } from './about/about.component';
 
+
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
   authDomain: masterFirebaseConfig.authDomain,

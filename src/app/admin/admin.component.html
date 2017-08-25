@@ -1,3 +1,42 @@
-<p>
-  admin works!
-</p>
+<div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title"><h3>Add New Member</h3></div>
+    </div>
+    <div class="panel-body">
+      <div>
+        <div>
+          <label>Member Name</label>
+          <br>
+          <input #newName>
+        </div>
+        <div>
+          <label>Age</label>
+          <br>
+          <input #newAge>
+        </div>
+        <div>
+          <label>Type</label>
+          <br>
+          <input #newType>
+        </div>
+        <div>
+          <label>About</label>
+          <br>
+          <input #newAboutMe>
+        </div>
+        <div>
+          <label>Years in Club</label>
+          <br>
+          <input #newMemberFor>
+        </div>
+        <button (click)="submitForm(newName.value, newAge.value, newType.value, newAboutMe.value, newMemberFor.value);
+        newName.value='';
+        newAge.value='';
+        newType.value='';
+        newAboutMe.value='';
+        newMemberFor.value=''">Add</button>
+      </div>
+    </div>
+  </div>
+</div>
